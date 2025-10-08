@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>I FORMS IN HTML+JS</title>
+    <style>
+      .input-margin {
+        margin: 0.25em 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>MANIPOLAZIONE DEI FORM IN JS</h1>
+    </header>
+    <main>
+      <form id="main-form">
+        <div class="input-margin">
+          <label for="firstname">Nome</label>
+          <input id="firstname" type="text" required maxlength="25" />
+        </div>
+        <div class="input-margin">
+          <label for="lastname">Cognome</label>
+          <input id="lastname" type="text" required />
+        </div>
+        <div class="input-margin">
+          <label for="age">Età</label>
+          <input id="age" type="number" min="18" max="100" />
+        </div>
+        <div class="input-margin">
+          <label for="email">Email</label>
+          <input id="email" type="email" required />
+        </div>
+        <div class="input-margin">
+          <label for="gender">Sesso</label>
+          <select id="gender">
+            <option>Uomo</option>
+            <option>Donna</option>
+            <option>Non so</option>
+          </select>
+        </div>
+        <div class="input-margin">
+          <label for="bio">Raccontaci di te</label>
+          <textarea id="bio" row="5" col="50"></textarea>
+        </div>
+        <div>
+          <button type="button">NON FARE NIENTE</button>
+          <button>INVIA</button>
+          <!-- un button inserito all'interno di un form assume automaticamente
+         un type="submit" -->
+          <!-- per "neutralizzare" un bottone dentro un form e dargli il comportamento
+          che volete voi, dovete assegnargli manualmente un type="button" -->
+        </div>
+      </form>
+    </main>
+    <script src="./scripts/forms.js"></script>
+  </body>
+</html>
