@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GLI EVENTI NEL BROWSER</title>
+  </head>
+  <body>
+    <header>
+      <h1>ORSI & TRAPPOLE</h1>
+    </header>
+    <main>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero,
+        voluptatum. Sed aut exercitationem laudantium temporibus molestias!
+        Culpa ab voluptatum modi in, cupiditate consequuntur, a repellendus
+        ipsam assumenda sequi quidem corporis. Lorem ipsum dolor, sit amet
+        consectetur adipisicing elit. Vero, voluptatum. Sed aut exercitationem
+        laudantium temporibus molestias! Culpa ab voluptatum modi in, cupiditate
+        consequuntur, a repellendus ipsam assumenda sequi quidem corporis.
+      </p>
+      <h3>Applichiamo degli event listeners a qualche tag HTML</h3>
+      <section id="btn-container">
+        <!-- se l'elemento su cui applicare la "trappola per eventi" l'avete
+         definito in HTML, il modo più semplice per applicarci un event listener
+         è utilizzare gli attributi on+qualcosa -->
+        <button onclick="handleClick(event)" onmouseenter="handleHover(event)">
+          CREATO IN HTML
+        </button>
+      </section>
+    </main>
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>
