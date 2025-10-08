@@ -4,10 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GLI EVENTI NEL BROWSER</title>
+    <link rel="stylesheet" href="./assets/index.css" />
   </head>
   <body>
     <header>
-      <h1>ORSI & TRAPPOLE</h1>
+      <h1 onclick="titleClick()">ORSI & TRAPPOLE</h1>
     </header>
     <main>
       <p>
@@ -27,6 +28,10 @@
         <button onclick="handleClick(event)" onmouseenter="handleHover(event)">
           CREATO IN HTML
         </button>
+        <!-- qui sotto finirà il bottone creato via JS -->
+      </section>
+      <section id="bear-container">
+        <!-- qui ci mettiamo l'orso -->
       </section>
     </main>
     <script src="./scripts/index.js"></script>
