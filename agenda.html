@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EPICODE RUBRICA APP</title>
+    <link rel="stylesheet" href="./assets/agenda.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>Calendar</li>
+          <li>Rubrica</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>LA MIA RUBRICA</h1>
+      <form id="new-contact-form">
+        <div>
+          <label for="firstname">Nome</label>
+          <input type="text" id="firstname" />
+        </div>
+        <div>
+          <label for="lastname">Cognome</label>
+          <input type="text" id="lastname" />
+        </div>
+        <div>
+          <label for="phone">N. Telefono</label>
+          <input type="tel" id="phone" />
+        </div>
+        <div>
+          <button>SALVA CONTATTO</button>
+        </div>
+      </form>
+      <section>
+        <div id="saved-contacts">
+          <!-- questo contenitore NASCE VUOTO -->
+        </div>
+      </section>
+    </main>
+    <script src="./scripts/agenda.js"></script>
+  </body>
+</html>
